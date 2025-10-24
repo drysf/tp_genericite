@@ -8,7 +8,24 @@ import static org.example.GenericsUtils.copierCollection;
 import static org.example.MediaComparators.LIVRE_BY_AUTEUR_THEN_TITRE;
 import static org.example.MediaComparators.MEDIA_BY_YEAR_DESC_THEN_TITLE;
 
+/**
+ * Classe principale pour tester toutes les fonctionnalités du TP sur la généricité.
+ * <p>
+ * Cette classe démontre l'utilisation de :
+ * - La hiérarchie de classes (Media, Livre, CD)
+ * - Les collections (List, Set, Map)
+ * - Les méthodes génériques (afficher, filtrer, copier)
+ * - Les comparateurs pour le tri
+ * - L'interface Empruntable
+ * - Le polymorphisme
+ * </p>
+ */
 public class Main {
+    /**
+     * Point d'entrée du programme.
+     * 
+     * @param args arguments de la ligne de commande (non utilisés)
+     */
     public static void main(String[] args) {
         Media l1 = new Livre("Le Petit Prince", 1943, "Antoine de Saint-Exupéry", 96);
         Media l2 = new Livre("Clean Code", 2008, "Robert C. Martin", 464);
